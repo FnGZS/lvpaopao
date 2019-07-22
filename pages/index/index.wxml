@@ -1,3 +1,133 @@
 <view id='index'>
-  绿泡泡家政 
+  <swiper indicator-dots="true" autoplay="true" interval="3000" duration="1000" circular="true" class='lunbotu' indicator-color="#fff" indicator-active-color="#3598DC">
+    <block wx:for="{{imgUrls}}" wx:key="key">
+      <swiper-item>
+        <image src="{{item.picUrl}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="gonggao">
+    <view class="gonggao-left">
+      <view class="iconfont icon-gonggao"></view>
+    </view>
+    <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="2500">
+      <block wx:for="{{msgList}}">
+        <navigator url="/pages/index/index?title={{item.url}}" open-type="navigate">
+          <swiper-item>
+            <view class="swiper_item">{{item.title}}</view>
+          </swiper-item>
+        </navigator>
+      </block>
+    </swiper>
+  </view>
+  <view class="xiuxian">
+    <view class="title">
+      <view class="title-col"></view>
+      <view class="title-text">娱乐休闲</view>
+    </view>
+    <view class="cont">
+      <view class="list">
+        <view class="list-icon bc1">
+          <view class="iconfont icon-yule1"></view>
+        </view>
+        <view class="list-title">品咖</view>
+      </view>
+      <view class="list">
+        <view class="list-icon bc2">
+          <view class="iconfont icon-yule2"></view>
+        </view>
+        <view class="list-title">下棋</view>
+      </view>
+      <view class="list">
+        <view class="list-icon bc3">
+          <view class="iconfont icon-yule3"></view>
+        </view>
+        <view class="list-title">游戏</view>
+      </view>
+      <view class="list">
+        <view class="list-icon bc4">
+          <view class="iconfont icon-yule4"></view>
+        </view>
+        <view class="list-title">唱歌</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="baojie">
+    <view class="title">
+      <view class="title-col"></view>
+      <view class="title-text">保洁推荐</view>
+    </view>
+    <view class="baojie-cont">
+      <view class="baojie-list">
+        <view class="baojie-list-title">常规保洁</view>
+        <view class="baojie-list-text">XXXX</view>
+        <view class="baojie-list-go">GO></view>
+        <image src="http://zjw77.club/someimg/lpp_sy_baojie.png"></image>
+      </view>
+      <view class="baojie-list">
+        <view class="baojie-list-title">深度保洁</view>
+        <view class="baojie-list-text">XXXX</view>
+        <view class="baojie-list-go">GO></view>
+        <image src="http://zjw77.club/someimg/lpp_sy_baojie.png"></image>
+      </view>
+      <view class="baojie-list">
+        <view class="baojie-list-title">新居开荒</view>
+        <view class="baojie-list-text">XXXX</view>
+        <view class="baojie-list-go">GO></view>
+        <image src="http://zjw77.club/someimg/lpp_sy_baojie.png"></image>
+      </view>
+      <view class="baojie-list">
+        <view class="baojie-list-title">办公室店面保洁</view>
+        <view class="baojie-list-text">XXXX</view>
+        <view class="baojie-list-go">GO></view>
+        <image src="http://zjw77.club/someimg/lpp_sy_baojie.png"></image>
+      </view>
+      <view class="baojie-list">
+        <view class="baojie-list-title">家居整理</view>
+        <view class="baojie-list-text">XXXX</view>
+        <view class="baojie-list-go">GO></view>
+        <image src="http://zjw77.club/someimg/lpp_sy_baojie.png"></image>
+      </view>
+      <view class="baojie-list">
+        <view class="baojie-list-title">甲醛治理</view>
+        <view class="baojie-list-text">XXXX</view>
+        <view class="baojie-list-go">GO></view>
+        <image src="http://zjw77.club/someimg/lpp_sy_baojie.png"></image>
+      </view>
+    </view>
+  </view>
+
+  <view class="tuijian">
+    <view class="title">
+      <view class="title-col"></view>
+      <view class="title-text">今日推荐</view>
+    </view>
+    <view class="tuijian-cont">
+      <view class="tuijian-list">
+        <image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1034389669,3064515247&fm=26&gp=0.jpg"></image>
+        <view class="tuijian-info">
+          <view class="tuijian-name">吴某某</view>
+          <view class="tuijian-detail">越城区 | 2-3年 | XXX</view>
+          <view class="tuijian-skill">
+            <view class="tuijian-skill-main">常规保洁</view>
+            <view class="tuijian-skill-main">家具整理</view>
+          </view>
+          <view class="tuijan-label">明星保洁员</view>
+        </view>
+      </view>
+      <view class="tuijian-list">
+        <image src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=932160767,1999068792&fm=26&gp=0.jpg"></image>
+        <view class="tuijian-info">
+          <view class="tuijian-name">张某某</view>
+          <view class="tuijian-detail">柯桥区 | 1-3年 | XXX</view>
+          <view class="tuijian-skill">
+            <view class="tuijian-skill-main">办公室店面保洁</view>
+            <view class="tuijian-skill-main">甲醛治理</view>
+          </view>
+          <view class="tuijan-label">明星保洁员</view>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>
