@@ -1,0 +1,40 @@
+<view id="swiper-tab">
+  <view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="tabNav">{{first}}
+      <i></i>
+    </view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="tabNav">{{second}}
+      <i></i>
+    </view>
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="tabNav">{{thirds}}
+      <i></i>
+    </view>
+    <!-- <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="tabNav">{{fours}}
+      <i></i>
+    </view> -->
+  </view>
+  <swiper current="{{currentTab}}" duration="500" class="swiper-item" style='display:{{displays}}'>
+    <swiper-item>
+      <view class="location_bottom" hidden="">
+        <view wx:for="{{cityArr}}" wx:key="key" class="{{_city == index + 1?'add_citying':'add_city'}}" data-num="{{index + 1}}" bindtap="clickCity" data-name="{{item.value}}">{{item.value}}</view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="location_bottom" hidden="">
+        <view wx:for="{{priceArr}}" wx:key="key" class="{{_price == index + 1?'add_priceing':'add_price'}}" data-num="{{index + 1}}" bindtap="clickPrice" data-name="{{item.value}}">{{item.value}}</view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="location_bottom" hidden="">
+        <view wx:for="{{amountArr}}" wx:key="key" class="{{_amount == index + 1?'add_amounting':'add_amount'}}" data-num="{{index + 1}}" bindtap="clickAmount" data-name="{{item.value}}">{{item.value}}</view>
+      </view>
+    </swiper-item>
+    <!-- <swiper-item>
+      <view class="location_bottom" hidden="">
+        <view wx:for="{{typeArr}}" wx:key="key" class="{{_type == index + 1?'add_typeing':'add_type'}}" data-num="{{index + 1}}" bindtap="clickType" data-name="{{item.value}}">{{item.value}}</view>
+      </view>
+    </swiper-item> -->
+    
+  </swiper>
+</view>
+<view class="swiper-beijing" bindtap="hideNav" style='display:{{displays}}'></view>

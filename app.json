@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/cleanNormal/cleanNormal",
     "pages/start/start",
     "pages/aboutUs/aboutUs"
   ],
