@@ -19,7 +19,11 @@ Page({
   onShow: function () {
    
   },
-
+  toCleanNormal:function(){
+    wx.navigateTo({
+      url: '../cleanNormal/cleanNormal',
+    })
+  },
   onHide: function () {
   },
   onUnload: function () {

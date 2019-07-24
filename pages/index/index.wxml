@@ -59,7 +59,7 @@
       <view class="title-text">保洁推荐</view>
     </view>
     <view class="baojie-cont">
-      <view class="baojie-list">
+      <view class="baojie-list" bindtap="toCleanNormal">
         <view class="baojie-list-title">常规保洁</view>
         <view class="baojie-list-text">XXXX</view>
         <view class="baojie-list-go">GO></view>

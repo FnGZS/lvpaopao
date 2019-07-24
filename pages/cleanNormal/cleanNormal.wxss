@@ -41,14 +41,14 @@
 }
  
 .on {
-  color: #f63;
-  border-bottom: 2rpx solid #f63;
+  color: #8ed145;
+  border-bottom: 2rpx solid #8ed145;
 }
  
 .on i {
 
-  border: 5px solid #f63;
-  border-top-color: #f63;
+  border: 5px solid #8ed145;
+  border-top-color: #8ed145;
   border-bottom-color: transparent;
   border-left-color: transparent;
   border-right-color: transparent;
@@ -170,29 +170,29 @@
   padding-left: 5%;
   height: 70rpx;
   line-height: 70rpx;
-  border-bottom: 2rpx solid #f63;
-  color: #f63;
+  border-bottom: 2rpx solid #8ed145;
+  color: #8ed145;
 }
 .add_priceing {
   padding-left: 5%;
   height: 70rpx;
   line-height: 70rpx;
-  border-bottom: 2rpx solid #f63;
-  color: #f63;
+  border-bottom: 2rpx solid #8ed145;
+  color: #8ed145;
 }
 .add_amounting {
   padding-left: 5%;
   height: 70rpx;
   line-height: 70rpx;
-  border-bottom: 2rpx solid #f63;
-  color: #f63;
+  border-bottom: 2rpx solid #8ed145;
+  color: #8ed145;
 }
 .add_typeing {
   padding-left: 5%;
   height: 70rpx;
   line-height: 70rpx;
-  border-bottom: 2rpx solid #f63;
-  color: #f63;
+  border-bottom: 2rpx solid #8ed145;
+  color: #8ed145;
 }
 
  
