@@ -14,7 +14,10 @@ Page({
     priceArr: [{ 'value': '默认' }, { 'value': '价格升序' }, { 'value': '价格降序' }],
     amountArr: [{ 'value': '默认' }, { 'value': '接单量升序' }, { 'value': '接单量降序' }],
     typeArr: [{ 'value': '默认' }, { 'value': '明星保洁员' }, { 'value': '普通保洁员' }],
-    currentTab: 0
+    currentTab: 0,
+    list:[
+      {}, {}, {}, {}, {}, {}, {}
+    ]
   },
   onLoad: function (options) {
 

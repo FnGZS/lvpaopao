@@ -1,10 +1,37 @@
-/*下拉菜单  */
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1566039818041'); /* IE9 */
+  src: url('iconfont.eot?t=1566039818041#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAALoAAsAAAAABrAAAAKZAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqBFIEcATYCJAMMCwgABCAFhG0HPBvoBciemjwpEctEiELim4f5ABNFEO33Ont3IQBJkn2+CpKKEbFRbY0kodjoCsO6te9Q1w4v7sHsbUR9Uqkkbd/y5POoTMz4arazwgij+U6a845Vja7Pczm9CXQg82OU4142xn5+1AswDiigvTHawmWSiDeMXeASzhNoNq6Y135jexcICmtaIJ50VQQhF1MUVmwU6mvWFvFancb0ku4BvAq/H3/BEgJJXWbNrT02KFD9I5Q5L1VLzn1CnAA31yFjFSjEZW3umI9gnI9mi297db0ipLmSVUWo0U319h8eSRD1rMZWsIjyiR+hria1mqHurgsZ7k6VOWCT7e0fYrJu8PGxu3f7ONafv3GaCDsn2X8G9s/zgg/fQvGNmzsx00QJDP+fdnigrdtsZ5u3ncmDEPe+XNSd1e6Elxchv5vtD9Uf42BwpLO8/wzWa0tdnfYvwBlcA1R3+VwOqqXc47MkELyZPpgbDS//JwQX8H0BgsI11VKB/IxGid7an6bt2VJ0veXNRdW4GjOQTfbIJjTrQRVYoW5f4x19N1YKjfpGhBqM3WSg0WxKFnYVdVqsoV6jLTRb0bS5RQ/GR5QmLFsHCJ2ukbT7hqzTA1nYT9Tp9496neGDZocRvWeL+dCD6hgWOVaQNI10mTqJ4+dBUXMHVj12kWX1Id+DmVtPIrPBVCw2YSdmcyxwT6gWzgkijDpQI7gM2+0UuRi1YpkbNM5dpUYjqbuRQaYOCLKHwUQcpkAk0xCdjHIifmcuqPT5DpjKw07EWhQ19R4Y46b3jpgZmHqQTRZnL8W9XOM2QWXBcQRCMJQD0ghGYXZ2FOKqH2WFyTgDbUTGpZTRbkf6Wgzr2xzftwuaWQfmSJGjaLjXRafmEQVJF+l46gYAAAAA') format('woff2'),
+  url('iconfont.woff?t=1566039818041') format('woff'),
+  url('iconfont.ttf?t=1566039818041') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1566039818041#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dianhua:before {
+  content: "\e631";
+}
+
+.icon-biaoqian:before {
+  content: "\e60d";
+}
+
+
  
 /* 下面是tobar */
  
 #swiper-tab {
   width: 100%;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
  
 .swiper-tab {
@@ -194,5 +221,110 @@
   border-bottom: 2rpx solid #8ed145;
   color: #8ed145;
 }
-
- 
+.list{
+  width: 90%;
+  padding:20rpx 5%;
+  display: flex;
+  background: #fff;
+  border-top: 8rpx solid #f5f5f5;
+}
+.list-left{
+  width: 20%;
+}
+.list-left-img{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.list-left-line{
+  width: 3rpx;
+  height: 20rpx;
+  background: #F3F3F3;
+  margin: auto;
+  margin-top: -10rpx;
+}
+.list-left-phone{
+  width: 60rpx;
+  height: 60rpx;
+  border: 5rpx solid #F3F3F3;
+  border-radius: 50%;
+  margin: auto;
+}
+.icon-dianhua{
+  margin-left: 15rpx;
+  color: #09C499;
+  line-height: 60rpx;
+}
+.list-center{
+  margin-left: 40rpx;
+  width: 30%;
+}
+.list-name{
+  margin-top:10rpx;
+  font-size: 30rpx;
+  /* font-weight: bold; */
+  color: #515151;
+}
+.list-time{
+  font-size: 25rpx;
+  margin-top: 20rpx;
+  color: #515151;
+}
+.list-num{
+  display: flex;
+  margin-top: 20rpx;
+}
+.list-num-jiedan-text{
+  font-size: 22rpx;
+  color: #C6C6C6;
+}
+.list-num-jiedan-number{
+  margin-top: 5rpx;
+  font-size: 25rpx;
+  text-align: center;
+  color: #515151;
+}
+.list-num-tuidan{
+  margin-left: 20rpx;
+}
+.list-num-tuidan-text{
+  font-size: 22rpx;
+  color: #C6C6C6;
+}
+.list-num-tuidan-number{
+  margin-top: 5rpx;
+  font-size: 25rpx;
+  text-align: center;
+  color: #515151;
+}
+.list-right{
+  width: 50%;
+  position: relative;
+}
+.icon-biaoqian{
+  font-size: 80rpx;
+  color:#71E3C9;
+  margin-top: -20rpx; 
+  position: absolute;
+  right: 8%;
+}
+.list-score{
+  position: absolute;
+  font-size: 25rpx;
+  top: 20rpx;
+  color: #fff;
+  right: 30%;
+}
+.list-yuyue{
+  position: absolute;
+  bottom: 20rpx;
+  right: 5%;
+  font-size: 28rpx;
+  border: 5rpx solid #F6F7FF;
+  height: 50rpx;
+  width: 100rpx;
+  line-height: 50rpx;
+  border-radius: 25rpx;
+  color: #09C499;
+  text-align: center;
+}
